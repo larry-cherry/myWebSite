@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include partials/head %>
+<body>
+    <% include partials/particles %>
+    <div class="container" id="heading">
+        <h1>Lets Build Something Together</h1>
+        <img src="images/larry-cherry.jpg" alt="Larry Cherry" id="larry" class="container-item">
+    </div>
+    <div class="container" id="about">
+        <h1>About Me</h1>
+        <p>I enjoy writing code and building apps. I spend my time between teaching coding fundamentals with codewizards and supporting BAS at Digital Air Control. If you know someone that needs help with a project or a volunteer event I can contribute my skill feel free to contact me</p>
+        <h3>Skills</h3>
+        <p>Ruby, JavaScript, JQuery, Rspec, Jasmine, Git, Bootstrap, SQlite, PostgreSQL, Ruby on Rails, Node, NPM, HTML5, CSS </p>
+        <div id="socail">
+            <i class="fas fa-envelope-square" onClick="alert('Email me at mail@larry.cherry.com')"></i>
+            <i class="fas fa-file-pdf" onClick="location.href='https://drive.google.com/file/d/1vO9OZxcAEA6siNyqulxpaPX_aU8-NMHs/view?usp=sharing'"></i>
+            <i class="fab fa-twitter-square" onClick="location.href = 'https://twitter.com/Larry_D_Cherry'"></i>
+            <i class="fab fa-linkedin" onClick="location.href = 'https://www.linkedin.com/in/larry-cherry/'"></i>
+            <i class="fab fa-github-square" onClick="location.href = 'https://github.com/larry-cherry'"></i>
+        </div>
+    </div>
+    <div id="photo-galary">
+        <i class="fas fa-arrow-circle-left arrow" onClick="changePhotoLeft()"></i>
+        <img id="photo" src="images/sxsw2018.jpg" alt="SXSW 2018">
+        <i class="fas fa-arrow-circle-right arrow" onClick="changePhotoRight()"></i>
+    </div>
+    <p id="photo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    <script src="javascripts/app.js"></script>
+</body>
+</html>

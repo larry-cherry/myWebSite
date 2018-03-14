@@ -1,0 +1,125 @@
+:root {
+    --primary-color-dark:   #7f0000;
+    --primary-color:        #b71c1c;
+    --primary-color-light:  #ce5f57;
+    --secondary-color-dark: #808d94;
+    --secondary-color: #afbdc4;
+    --secondary-color-light: #e1eff7;
+    --primary-color-text:   white;
+    --secondary-text-color: #000000;
+  }
+
+/* * {
+    outline: 2px solid black;
+} */
+/* @font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url("fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    text-align: center;
+    -webkit-animation-name: shifting-background; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: shifting-background;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shifting-background {
+    0%   {background-color: var(--primary-color);}
+    50%  {background-color: var(--primary-color-dark); }
+    100%  {background-color: var(--primary-color); }
+}
+
+/* Standard syntax */
+@keyframes shifting-background {
+    0%   {background-color: var(--primary-color);}
+    50%  {background-color: var(--primary-color-dark); }
+    100%  {background-color: var(--primary-color); }
+}
+
+@media only screen  and (min-width : 1224px) {
+    body {
+        width: 70%;
+        margin: auto;
+    }
+    #photo-text {
+        width: 65%;
+    }
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 40px;
+}
+.container-item {
+    max-width: 50%;
+}
+
+
+#heading {
+    /* outline: 3px dashed red; */
+    /* width:200px;
+    height:280px; */
+    /* background-image:url("images/frame.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#larry {
+    border-radius: 25px;
+    background-size: contain;
+}
+
+#socail {
+    font-size: 35px;
+}
+
+#photo-galary {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%
+}
+
+#photo {
+    background-size: contain;
+    margin: 0px 5px;
+    width: 85%;   
+}
+
+.arrow {
+    /* width: 10%; */
+    font-size: 35px;
+}
+
+#photo-text {
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+    width: 85%;
+}
